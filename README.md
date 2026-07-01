@@ -1,41 +1,49 @@
-# Heart Disease Prediction using ML
+﻿# Heart Disease Prediction using ML
 
-A machine learning project to predict the presence of heart disease using classification algorithms.
+A healthcare-focused machine learning project that predicts the presence of heart disease using ensemble classification algorithms.
 
-## Overview
-This project implements predictive models to identify heart disease in patients based on medical metrics using **AdaBoost** and **Random Forest** classifiers.
+## 🚀 Project Overview
+This repository contains end-to-end model development for binary heart disease prediction using patient medical features. It includes:
+- data cleaning and preprocessing
+- exploratory data analysis (EDA)
+- model training and evaluation
+- comparison of AdaBoost and Random Forest classifiers
 
-## Dataset
-- **Source**: [UCI Heart Disease Dataset](https://www.kaggle.com/ronitf/heart-disease-uci)
-- **Features**: 13 medical attributes (age, cholesterol, blood pressure, etc.)
-- **Target**: Presence/absence of heart disease
-
-## Models
-- **AdaBoost Classifier** - Boosting ensemble method
-- **Random Forest Classifier** - Bagging ensemble method
-
-## Project Structure
+## 📁 Repository Structure
 ```
-+-- AdaBoost.ipynb              # AdaBoost model implementation
-+-- Random Forest.ipynb         # Random Forest model implementation
-+-- data/                       # Dataset files
-+-- README.md
-```
-
-## Requirements
-```
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
+Heart-Disease-prediction-using-ml/
+├── data/
+│   └── heart_disease.csv
+├── notebooks/
+│   ├── adaboost_classifier.ipynb
+│   └── random_forest_classifier.ipynb
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
-## Usage
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the Jupyter notebooks to train and evaluate models
-4. Models are compared on metrics: Accuracy, Precision, Recall, F1-Score
+## 📦 Dataset
+- Source: [UCI Heart Disease Dataset](https://www.kaggle.com/ronitf/heart-disease-uci)
+- Features: 13 medical attributes including age, sex, blood pressure, cholesterol, maximum heart rate, and more
+- Target: Heart disease presence (binary classification)
 
-## Results
-Both models achieve high accuracy in predicting heart disease presence. Random Forest generally provides better feature interpretability for medical decision-making.
+## 🧠 Models Included
+- AdaBoost Classifier
+- Random Forest Classifier
+
+## ✅ How to Run
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/adaboost_classifier.ipynb
+jupyter notebook notebooks/random_forest_classifier.ipynb
+```
+
+## 📊 Evaluation
+The notebooks evaluate models using metrics such as accuracy, precision, recall, and F1-score.
+
+## 🛠️ Requirements
+See `requirements.txt` for exact package versions.
+
+## 📌 Notes
+- The notebook filenames are renamed for readability and recruiter-friendly presentation.
+- Dataset now lives in `data/`.
